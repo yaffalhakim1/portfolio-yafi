@@ -59,7 +59,12 @@ export default function Home() {
             />
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Visit</Button>
+            <Link
+              href={"https://byebyesick-staging.irfancen.com/"}
+              className="w-full"
+            >
+              <Button className="w-full">Visit</Button>
+            </Link>
           </CardFooter>
         </Card>
         <Card className="transform transition-transform duration-200 hover:scale-105 ">
@@ -78,7 +83,12 @@ export default function Home() {
             />
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Visit</Button>
+            <Link
+              href={"https://simple-ecommerce-appdir.vercel.app/"}
+              className="w-full"
+            >
+              <Button className="w-full">Visit</Button>
+            </Link>{" "}
           </CardFooter>
         </Card>
         <Card className="transform transition-transform duration-200 hover:scale-105 ">
@@ -92,7 +102,9 @@ export default function Home() {
             <Image src={"/img/chill.png"} alt={""} width={500} height={500} />
           </CardContent>
           <CardFooter>
-            <Button className="w-full">Visit</Button>
+            <Link href={"https://chill-out.vercel.app/"} className="w-full">
+              <Button className="w-full">Visit</Button>
+            </Link>{" "}
           </CardFooter>
         </Card>
       </div>
