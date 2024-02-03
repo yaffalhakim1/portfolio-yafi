@@ -7,15 +7,6 @@ import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { ModeToggle } from "./theme-toggle";
 
-interface Props {
-  params?: any;
-}
-
-interface ItemProps {
-  href?: string;
-  text?: string;
-}
-
 const Items = {
   "/": {
     name: "home",
@@ -58,13 +49,6 @@ export default function Sidebar({ className }: sideBar) {
   if (pathname.includes("/blog/")) {
     pathname = "/blog";
   }
-  // const { theme, setTheme } = useTheme();
-  // const [isMounted, setIsMounted] = React.useState(false);
-  // React.useEffect(() => {
-  //   setIsMounted(true);
-  // }, []);
-
-  // if (!isMounted) return null;
 
   return (
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 z-50">

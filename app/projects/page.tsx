@@ -14,6 +14,17 @@ const page = () => {
       </p>
       <div className="grid grid-cols-2 gap-4 mt-5">
         <Projects
+          title={"Sumz"}
+          desc={"Sumz is a website to summarize article with AI"}
+          image={"/img/sumz.png"}
+          href="https://summarizer-drab.vercel.app/"
+          stack={
+            <Badge
+              logo1={<IconNextjs width="16px" height="16px" className="mr-1" />}
+            />
+          }
+        />
+        <Projects
           title={"Chill Out"}
           desc={"Chill Out is a web makes you study with relax."}
           image={"/img/chill.png"}
