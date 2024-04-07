@@ -13,7 +13,7 @@ export default async function BlogPage() {
         <span>
           <a
             href="https://yafialhakimblog.vercel.app/"
-            className="text-blue-500"
+            className="text-[#00DC82] hover:underline"
           >
             blog
           </a>

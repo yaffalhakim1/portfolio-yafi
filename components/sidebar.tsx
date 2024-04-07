@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { ModeToggle } from "./theme-toggle";
+import { ThemeToggle } from "./theme-toggle";
 
 const Items = {
   "/": {
@@ -62,7 +62,7 @@ export default function Sidebar({ className }: sideBar) {
             src="/img/photo.jpg"
           />
 
-          <ModeToggle />
+          <ThemeToggle />
         </div>
         <nav
           className="relative flex flex-row items-start px-4 pb-0 overflow-hidden md:flex-col md:px-0 fade md:overflow-auto scroll-pr-6 md:relative "

@@ -4,15 +4,45 @@ import clsx from "clsx";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Header } from "@/components/header";
+import { cn } from "@/lib/utils";
 
 const jakarta = Plus_Jakarta_Sans({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
 
+const metainfo = {
+  name: "Muhammad Yafi Alhakim",
+  description: "Front End Engineer from Indonesia.",
+  url: "https://yafialhakim.vercel.app",
+  image: "/meta/meta.png",
+  twitter: "@pengenradiant",
+};
+
 export const metadata: Metadata = {
-  title: "Muhammad Yafi Alhakim",
-  description: "Muhammad Yafi's personal website",
+  metadataBase: new URL(metainfo.url),
+  title: metainfo.name,
+  description: metainfo.description,
+  authors: {
+    name: metainfo.name,
+    url: metainfo.url,
+  },
+  creator: metainfo.name,
+  openGraph: {
+    type: "website",
+    url: metainfo.url,
+    title: metainfo.name,
+    description: metainfo.description,
+    images: metainfo.image,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: metainfo.name,
+    description: metainfo.description,
+    creator: metainfo.twitter,
+    images: metainfo.image,
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +53,7 @@ export default function RootLayout({
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <body>
+        <body className="dark:bg-[#020420]">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -32,12 +62,14 @@ export default function RootLayout({
           >
             <div
               className={clsx(
-                "flex flex-col md:flex-row lg:w-[1000px] mx-4 lg:mx-auto lg:mt-[100px] mt-8 antialiased max-w-4xl mb-40",
+                "container flex min-h-screen max-w-4xl flex-col ",
                 jakarta.className
               )}
             >
-              <Sidebar className="z-50" />
-              <main>{children}</main>
+              <Header />
+              <main className="flex flex-1 flex-col pb-20 pt-40 md:pt-32">
+                {children}
+              </main>
             </div>
           </ThemeProvider>
         </body>

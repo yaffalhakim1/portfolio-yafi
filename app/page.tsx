@@ -1,5 +1,4 @@
-import Bio from "@/components/bio";
-import TextRotator from "@/components/text-rotator";
+// import Bio from "@/components/bio";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -9,23 +8,36 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { cn } from "@/lib/utils";
-import { ArrowRightIcon, BellIcon, CheckIcon } from "@radix-ui/react-icons";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col space-y-9 ">
+    <div className="flex flex-col space-y-9 min-h-[50vh]">
       <h1 className="mt-3 text-5xl font-bold text-center md:mt-0">
-        Muhammad Yafi Alhakim
+        Yafi Alhakim
       </h1>
-      <TextRotator />
+      {/* <TextRotator /> */}
+      <div className="text-[#00DC82] text-3xl font-bold text-center">
+        Frontend Engineer
+      </div>
 
       <p className="leading-relaxed text-center">
-        In my spare time, I train using LeetCode exercises and sharpening my Git
-        skills by contributing to open-source projects. I also love to learn new
-        things and try to implement them in my projects.
+        {" "}
+        I&apos;m a passionate Frontend Engineer from Indonesia, dedicated to
+        crafting beautiful web applications and websites. I contribute my
+        expertise to{" "}
+        <a
+          href="https://myskill.id"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#00DC82] hover:underline"
+        >
+          {" "}
+          MySkill.id{" "}
+        </a>{" "}
+        , a leading company in the education and job preparations.
       </p>
 
       {/* <div className="flex flex-col items-center justify-center mt-5 md:flex-row md:space-x-2">
@@ -45,22 +57,17 @@ export default function Home() {
       <div className="md:grid md:grid-cols-3 md:gap-3 md:space-x-2 md:space-y-0  space-y-2 ">
         <Card className="transform transition-transform duration-200 hover:scale-105 ">
           <CardHeader>
-            <CardTitle>ByeByeSick</CardTitle>
+            <CardTitle>Summarizer</CardTitle>
             <CardDescription>
-              A Healthcare Platform for everyone.
+              A tool to summarize your text into a few sentences with AI.
             </CardDescription>
           </CardHeader>
           <CardContent className="">
-            <Image
-              src={"/img/byebyesick.png"}
-              alt={""}
-              width={500}
-              height={500}
-            />
+            <Image src={"/img/sumz.png"} alt={""} width={500} height={500} />
           </CardContent>
           <CardFooter>
             <Link
-              href={"https://byebyesick-staging.irfancen.com/"}
+              href={"https://summarizer-drab.vercel.app/"}
               className="w-full"
             >
               <Button className="w-full">Visit</Button>

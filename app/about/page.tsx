@@ -75,7 +75,7 @@ const page = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://drive.google.com/file/d/1Ms2fZxgGrVdZ0aaaoGDyc375p51U_wVg/view?usp=sharing"
-          className="flex items-center justify-between w-full p-4 no-underline transition-all border rounded-lg md:w-3/12 border-neutral-800 hover:bg-neutral-900 hover:text-white"
+          className="flex items-center justify-between w-full p-4 no-underline transition-all border rounded-lg md:w-3/12 border-neutral-800 hover:bg-[#131B30] hover:text-white"
         >
           <div className="flex items-center">
             <FileIcon />
@@ -87,7 +87,7 @@ const page = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.linkedin.com/in/yafialhakim/"
-          className="flex items-center justify-between w-full p-4 no-underline transition-all border rounded-lg md:w-3/12 border-neutral-800 hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900 hover:dark:text-white"
+          className="flex items-center justify-between w-full p-4 no-underline transition-all border rounded-lg md:w-3/12 border-neutral-800 hover:bg-[#131B30] hover:text-white hover:dark:hover:bg-[#131B30] hover:dark:text-white"
         >
           <div className="flex items-center">
             <LinkedinIcon />
@@ -99,7 +99,7 @@ const page = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="https://github.com/yaffalhakim1"
-          className="flex items-center justify-between w-full p-4 no-underline transition-all border rounded-lg md:w-3/12 border-neutral-800 hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900 hover:dark:text-white"
+          className="flex items-center justify-between w-full p-4 no-underline transition-all border rounded-lg md:w-3/12 border-neutral-800 hover:bg-[#131B30] hover:text-white hover:dark:hover:bg-[#131B30] hover:dark:text-white"
         >
           <div className="flex items-center">
             <GitHubIcon />
@@ -111,7 +111,7 @@ const page = () => {
           rel="noopener noreferrer"
           target="_blank"
           href="mailto:yafialhakim64@email.com"
-          className="flex items-center justify-between w-full p-4 no-underline transition-all border rounded-lg md:w-3/12 border-neutral-800 hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900 hover:dark:text-white"
+          className="flex items-center justify-between w-full p-4 no-underline transition-all border rounded-lg md:w-3/12 border-neutral-800 hover:bg-[#131B30] hover:text-white hover:dark:hover:bg-[#131B30] hover:dark:text-white"
         >
           <div className="flex items-center">
             <EmailIcon />
