@@ -16,7 +16,7 @@ export default function Writing(props: ItemProps) {
       <Link
         rel="noopener noreferrer"
         href={`/blog/${encodeURIComponent(props.slug)}`}
-        className="flex w-full border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-neutral-900 hover:text-white hover:dark:bg-neutral-900  hover:dark:text-white  transition-all justify-between"
+        className="flex w-full border border-neutral-800 rounded-lg p-4 no-underline items-center  hover:bg-[#131B30] hover:text-white hover:dark:bg-[#131B30]  hover:dark:text-white  transition-all justify-between"
       >
         <div className=" items-center">
           <span className="ml-3 text-gray-500 mb-2 text-sm">
