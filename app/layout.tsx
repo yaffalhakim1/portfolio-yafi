@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <body className="dark:bg-[#020420]">
+        <body className="bg-neutral-100 dark:bg-neutral-950">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"

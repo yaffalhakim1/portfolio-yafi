@@ -1,4 +1,4 @@
-// import Bio from "@/components/bio";
+import TypingAnimation from "@/components/rotate-text";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -15,34 +15,25 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col space-y-9 min-h-[50vh]">
-      <h1 className="mt-3 text-5xl font-bold text-center md:mt-0">
-        Yafi Alhakim
-      </h1>
-      {/* <TextRotator /> */}
-      <div className="text-[#00DC82] text-3xl font-bold text-center">
-        Frontend Engineer
-      </div>
+      <div className="flex flex-col space-y-3">
+        <h1 className="mt-3 text-3xl font-bold  md:mt-0">
+          Muhammad Yafi Alhakim 😎
+        </h1>
 
-      <p className="leading-relaxed text-center">
-        {" "}
-        I&apos;m a passionate Frontend Engineer from Indonesia, dedicated to
-        crafting beautiful web applications and websites. I contribute my
-        expertise to{" "}
-        <a
-          href="https://myskill.id"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#00DC82] hover:underline"
-        >
+        {/* <div className="text-[#00DC82] text-2xl font-bold ">
+          Frontend Engineer
+        </div> */}
+        <TypingAnimation
+          className="text-2xl font-bold text-[#00DC82]"
+          text="Frontend Engineer"
+        />
+
+        <p className="leading-relaxed ">
           {" "}
-          MySkill.id{" "}
-        </a>{" "}
-        , a leading company in the education and job preparations.
-      </p>
-
-      {/* <div className="flex flex-col items-center justify-center mt-5 md:flex-row md:space-x-2">
-        <Bio />
-      </div> */}
+          I&apos;m a passionate Frontend Engineer from Indonesia, dedicated to
+          crafting beautiful web applications and websites.
+        </p>
+      </div>
 
       <div className="flex justify-between">
         <h2 className="font-bold text-2xl">Featured Projects</h2>
@@ -55,7 +46,7 @@ export default function Home() {
       </div>
 
       <div className="md:grid md:grid-cols-3 md:gap-3 md:space-x-2 md:space-y-0  space-y-2 ">
-        <Card className="transform transition-transform duration-200 hover:scale-105 ">
+        <Card className="transform transition-transform duration-200 hover:scale-105  dark:bg-neutral-900 border-transparent ">
           <CardHeader>
             <CardTitle>Summarizer</CardTitle>
             <CardDescription>
@@ -68,13 +59,15 @@ export default function Home() {
           <CardFooter>
             <Link
               href={"https://summarizer-drab.vercel.app/"}
-              className="w-full"
+              className="w-full "
             >
-              <Button className="w-full">Visit</Button>
+              <Button className="w-full bg-[#00DC82]  dark:bg-neutral-200">
+                Visit
+              </Button>
             </Link>
           </CardFooter>
         </Card>
-        <Card className="transform transition-transform duration-200 hover:scale-105 ">
+        <Card className="transform transition-transform duration-200 hover:scale-105  dark:bg-neutral-900 border-transparent">
           <CardHeader>
             <CardTitle>Simple E-Commerce</CardTitle>
             <CardDescription>
@@ -94,11 +87,13 @@ export default function Home() {
               href={"https://simple-ecommerce-appdir.vercel.app/"}
               className="w-full"
             >
-              <Button className="w-full">Visit</Button>
+              <Button className="w-full bg-[#00DC82]  dark:bg-neutral-200">
+                Visit
+              </Button>{" "}
             </Link>{" "}
           </CardFooter>
         </Card>
-        <Card className="transform transition-transform duration-200 hover:scale-105 ">
+        <Card className="transform transition-transform duration-200 hover:scale-105  dark:bg-neutral-900 border-transparent">
           <CardHeader>
             <CardTitle>Chill Out</CardTitle>
             <CardDescription>
@@ -110,7 +105,9 @@ export default function Home() {
           </CardContent>
           <CardFooter>
             <Link href={"https://chill-out.vercel.app/"} className="w-full">
-              <Button className="w-full">Visit</Button>
+              <Button className="w-full bg-[#00DC82]  dark:bg-neutral-200">
+                Visit
+              </Button>{" "}
             </Link>{" "}
           </CardFooter>
         </Card>
