@@ -22,21 +22,12 @@ const page = () => {
         I&apos;m Yafi, a <span className="font-bold">Frontend Engineer</span>
       </p>
       <p className="text-justify md:w-9/12">
-        I already have experience building web app and now currently i focused
-        on pursuit my career as a Frontend Engineer.
+        A Frontend Engineer with 1+ year of experience in building web and
+        mobile applications. I have a strong passion for learning new
+        technologies and building products that can help people. I have
+        experience working with NextJS, ReactJS, NodeJS.
       </p>
       <div className="my-4 border md:w-9/12" />
-      <p className="text-justify md:w-9/12">
-        My name is Muhammad Yafi Alhakim, and I&apos;m a Frontend Engineer based
-        in Jakarta, Indonesia. I&apos;m passionate about good design and build
-        things, and I love building for the web.
-      </p>
-
-      <p className="text-justify md:w-9/12">
-        I&apos;m always learning and growing, and I&apos;m excited to see what
-        the future holds. Thank you for visiting my website. If you have any
-        questions or comments, please don&apos;t hesitate to contact me.
-      </p>
 
       <h1 className="text-lg font-bold">Current Tech Stack</h1>
       <div className="flex space-x-2">
