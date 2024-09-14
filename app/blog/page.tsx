@@ -30,8 +30,3 @@ export default async function BlogPage() {
     </div>
   );
 }
-
-async function fetchBlogData() {
-  const res = getAllPublishedBlog();
-  return res;
-}
