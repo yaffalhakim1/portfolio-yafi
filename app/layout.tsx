@@ -1,11 +1,9 @@
-import Sidebar from "@/components/sidebar";
 import "./globals.css";
 import clsx from "clsx";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/header";
-import { cn } from "@/lib/utils";
 
 const jakarta = Plus_Jakarta_Sans({
   weight: ["400", "700"],
@@ -17,7 +15,7 @@ const metainfo = {
   description: "Front End Engineer from Indonesia.",
   url: "https://yafialhakim.vercel.app",
   image: "/meta/meta.png",
-  twitter: "@pengenradiant",
+  twitter: "@koalasigma",
 };
 
 export const metadata: Metadata = {

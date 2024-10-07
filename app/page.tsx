@@ -20,9 +20,6 @@ export default function Home() {
           Muhammad Yafi Alhakim 😎
         </h1>
 
-        {/* <div className="text-[#00DC82] text-2xl font-bold ">
-          Frontend Engineer
-        </div> */}
         <TypingAnimation
           className="text-2xl font-bold text-[#00DC82]"
           text="Frontend Engineer"
