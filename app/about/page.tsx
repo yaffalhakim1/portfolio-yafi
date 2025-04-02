@@ -77,7 +77,7 @@ const page = () => {
           <a
             rel='noopener noreferrer'
             target='_blank'
-            href='https://drive.google.com/file/d/1Ms2fZxgGrVdZ0aaaoGDyc375p51U_wVg/view?usp=sharing'
+            href='https://yafi-cv.vercel.app/'
             className='flex items-center justify-between w-full p-4 no-underline transition-all border rounded-lg md:w-3/12 border-neutral-800 hover:bg-[#131B30] hover:text-white'
           >
             <div className='flex items-center'>
